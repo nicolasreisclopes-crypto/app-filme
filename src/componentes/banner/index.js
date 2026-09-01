@@ -10,7 +10,7 @@ export default function Banner () {
             <Text style = {styles.textBanner}> Em cartaz </Text>
 
             <Image
-                source={require("../../../assets/como-magica.jpg")}
+                source={require("../../../assets/vingadores-doomsday.jpg")}
                 style = {styles.imageBanner}
             ></Image>
 

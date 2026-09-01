@@ -17,24 +17,33 @@ export default function App () {
       <View style={{width:'90%'}}>
 
         <FlatList 
-        
+
+          showsVerticalScrollIndicator = {false}
           horizontal = {true}
           data = {Movies}
           keyExtractor = {(item)=> item.id}
           renderItem = {({item}) => (
 
-          <TouchableOpacity>
+          <cardMovies
+            titulo = {item.nome}
+            imagem = {item.imagem}
+            nota = {item.nota}
+          />
 
+          /*
+          <TouchableOpacity style = {styles.containerFilmes}>
+          
             <Image
+              style = {styles.images} 
+              source = {{uri: item.imagem}} 
+            />
 
-              style = {{width:80, height:100}} 
-              source = {{uri: item.imagem}}>
-            
-            </Image>
+            <Text style = {styles.titulo}> {item.nome} </Text>
 
-            <Text> {item.nome} </Text>
+            <Text style = {styles.textNota}> {item.nota} </Text>
 
           </TouchableOpacity>
+          */
 
         )}
 
@@ -51,9 +60,34 @@ const styles = StyleSheet.create ({
 
   container: {
     flex: 1,
-    backgroundColor: '#171A4A',
-    alignItems: 'center',
-   
+    backgroundColor: '#141a29',
+    alignItems: "center",
   },
+
+  containerFilmes:{
+    paddingTop:20,
+    paddingBottom:16,
+    paddingRight:16,
+    width:140,
+    heigh:28
+  },
+
+  titulo:{
+    color: '#fff',
+    fontSize:12,
+    paddingTop:8  
+  },
+
+  textNota:{
+    fontSize:10,
+    color:'#fff',
+    paddingLeft:4
+  },
+
+  images:{
+    width:'100%',
+    height:170,
+    borderRadius: 8,     
+  }
 
 });

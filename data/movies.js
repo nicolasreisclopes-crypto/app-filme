@@ -7,9 +7,9 @@ const DATA = [
     },
     {
       id: '2',
-      nome: 'Chappie',
+      nome: 'Cinderela',
       nota: '8.0',
-      imagem: 'https://media.themoviedb.org/t/p/w188_and_h282_face/cg93jYwHiDVkesAkllPfeiO6brm.jpg',
+      imagem: 'https://upload.wikimedia.org/wikipedia/pt/c/c2/Cinderella_2015_official_poster.jpg?utm_source=pt.wikipedia.org&utm_campaign=index&utm_content=original',
     },
     {
       id: '3',
@@ -37,15 +37,15 @@ const DATA = [
     },
     {
       id: '7',
-      nome: 'Velozes & Furiosos: Espiões do Asfalto',
+      nome: 'Mulan',
       nota: '9.1',
-      imagem: 'https://media.themoviedb.org/t/p/w188_and_h282_face/liC9NvzJzHW1LZi41KTKURDq2Pr.jpg',
+      imagem: 'https://m.media-amazon.com/images/I/91++nYXJ5dL.jpg',
     },
     {
       id: '8',
-      nome: 'Vingadores: Unidos',
+      nome: 'Dark',
       nota: '8.8',
-      imagem: 'https://media.themoviedb.org/t/p/w188_and_h282_face/tCyp6aqOhqGxg6dU0OOIPhOAAne.jpg',
+      imagem: 'https://upload.wikimedia.org/wikipedia/pt/thumb/f/f6/Dark_%28s%C3%A9rie%29.jpg/250px-Dark_%28s%C3%A9rie%29.jpg?utm_source=pt.wikipedia.org&utm_campaign=parser&utm_content=thumbnail',
     },
     {
       id: '9',
