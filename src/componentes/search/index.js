@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity } from 'react-native';
-import AntDesign from '@expo/vector-icons/AntDesign';
+import Feather from '@expo/vector-icons/Feather';
 import styles from './styles';
 
 export default function Search () {
@@ -13,7 +13,7 @@ export default function Search () {
             ></TextInput>
 
             <TouchableOpacity>
-                <AntDesign name="search" size={24} color="black" />
+                <Feather name="search" size={24} color="black" />
             </TouchableOpacity>
 
         </View>

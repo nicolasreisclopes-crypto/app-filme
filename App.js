@@ -1,14 +1,21 @@
 import { StyleSheet, Text, View, Image, TextInput, TouchableOpacity, FlatList } from 'react-native';
-import AntDesign from '@expo/vector-icons/AntDesign';
+import { LinearGradient } from 'expo-linear-gradient';
 import Header from './src/componentes/header';
 import Search from './src/componentes/search';
 import Banner from './src/componentes/banner';
 import Movies from './data/movies';
+import CardMovies from './src/componentes/cardMovies';
 
 export default function App () {
   return (
 
-    <View style={styles.container}>
+    <LinearGradient
+
+      colors={['#010B19', '#1A1951', '#1E3A8A']} 
+      start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}
+      style={styles.container}
+
+    >
 
       <Header></Header>
       <Search></Search>
@@ -24,10 +31,12 @@ export default function App () {
           keyExtractor = {(item)=> item.id}
           renderItem = {({item}) => (
 
-          <cardMovies
+          <CardMovies
+
             titulo = {item.nome}
             imagem = {item.imagem}
             nota = {item.nota}
+
           />
 
           /*
@@ -51,7 +60,7 @@ export default function App () {
 
       </View>
 
-    </View>
+    </LinearGradient>
 
   );
 };
@@ -60,7 +69,6 @@ const styles = StyleSheet.create ({
 
   container: {
     flex: 1,
-    backgroundColor: '#141a29',
     alignItems: "center",
   },
 
